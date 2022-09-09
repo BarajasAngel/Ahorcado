@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440.37 52.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #c7dad3;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #c7dad3;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 48px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(55.68 40.32) scale(1.12 1)"><tspan x="0" y="0">H</tspan></text>
+  <text class="cls-2" transform="translate(112.82 40.18) scale(1.12 1)"><tspan x="0" y="0">O</tspan></text>
+  <text class="cls-2" transform="translate(173.52 40.58) scale(1.12 1)"><tspan x="0" y="0">R</tspan></text>
+  <text class="cls-2" transform="translate(231.79 40.7) scale(1.12 1)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-2" transform="translate(344.68 40.51) scale(1.12 1)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-2" transform="translate(403.22 40.18) scale(1.12 1)"><tspan x="0" y="0">O</tspan></text>
+  <line class="cls-1" x1="0" y1="48.22" x2="30.41" y2="48.22"/>
+  <line class="cls-1" x1="58.41" y1="48.22" x2="88.82" y2="48.22"/>
+  <line class="cls-1" x1="116.82" y1="48.22" x2="147.23" y2="48.22"/>
+  <line class="cls-1" x1="175.23" y1="48.22" x2="205.63" y2="48.22"/>
+  <line class="cls-1" x1="233.63" y1="48.22" x2="264.04" y2="48.22"/>
+  <line class="cls-1" x1="291.04" y1="48.22" x2="321.45" y2="48.22"/>
+  <line class="cls-1" x1="350.45" y1="48.22" x2="380.86" y2="48.22"/>
+  <line class="cls-1" x1="408.86" y1="48.22" x2="439.27" y2="48.22"/>
+</svg>

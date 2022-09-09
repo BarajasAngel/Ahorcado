@@ -10,55 +10,86 @@
     <title>Document</title>
 </head>
 
-<body>    
+<body bgcolor="#2F404F">    
+  <header>
+    <nav>
+      <d<iv class="level">
+       <b> Nivel <span>0</span></b>
+      </div>
+    </nav>
+  </header>
     <main>
         <section  class="container-inicio">
             <article class="titulo">
-                <img src="./img/titulo.png" alt="Titulo" width="100%" height="100%">
+                <img src="./img/Titulo.svg" alt="Titulo" width="100%" height="100%">
+                <div class="buttons">
+                  <button type="button" class="button button-primary" data-bs-toggle="modal" data-bs-target="#NewGameModal">
+                      Iniciar Juego
+                  </button>
+                  <button onclick="setFocus()" class="button button-secondary" data-bs-toggle="modal" data-bs-target="#NewWordModal">
+                      Agregar nueva palabra
+                  </button>
+              </div>
             </article>
-            <article>
+            <article>                
                 <div id="animation">
 
-                </div>
-                <div class="buttons">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Iniciar Juego
-                    </button>
-                    <button class="btn btn-secondary">
-                        Agregar nueva palabra
-                    </button>
                 </div>
             </article>
         </section>
     </main>     
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <footer>
+      <span>2022 &copy; | <a href="https://github.com/BarajasAngel"><img src="./img/github.png" alt="logo github" width="20px" height="20px"> @BarajasAngel</a></span>
+    </footer>
+
+
+  <!-- Modal Personajes-->
+  <div class="modal fade" id="NewGameModal" tabindex="-1" aria-labelledby="NewGameModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="NewGameModalLabel">Selecciona tu personaje</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="./img/man.png" alt="man" width="150" height="200">
-          <img src="./img/women.png" alt="women" width="150" height="200">
-          <img src="./img/man.png" alt="man" width="150" height="200">
-          <img src="./img/man.png" alt="man" width="150" height="200">
-          <img src="./img/man.png" alt="man" width="150" height="200">
-          <img src="./img/man.png" alt="man" width="150" height="200">
+          <div class="characters">
+            <img class="zoom" src="./img/man.png" alt="man" width="150" height="225">
+            <img class="zoom" src="./img/women.png" alt="women" width="150" height="225">
+            <img class="zoom" src="./img/boy.png" alt="man" width="150" height="225">
+            <img class="zoom" src="./img/cowgirl.png" alt="man" width="150" height="225">
+            <img class="zoom" src="./img/pinky.png" alt="man" width="150" height="225">
+            <img class="zoom" src="./img/mouse.png" alt="man" width="150" height="225">
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>          
         </div>
       </div>
     </div>
   </div>   
-<footer>
+  <!-- Modal Palabra nueva-->
+  <div class="modal fade" id="NewWordModal" tabindex="-1" aria-labelledby="NewWordModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="NewWordModalLabel">Selecciona tu personaje</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="">          
+            <form action="">
+              <input type="text" id="new" required>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>          
+        </div>
+      </div>
+    </div>
+  </div>   
 
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <script src="./js/index.js""></script>
     

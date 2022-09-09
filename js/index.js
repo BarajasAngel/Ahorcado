@@ -1,9 +1,9 @@
-document.addEventListener('keydown', (event) => {
-    var keyValue = event.key;    
+// document.addEventListener('keydown', (event) => {
+//     var keyValue = event.key;    
 
-    console.log("keydown event, keyValue: " + keyValue);    
+//     console.log("keydown event, keyValue: " + keyValue);    
    
-}, false);
+// }, false);
    
 let anim = document.getElementById("animation");
 
@@ -12,5 +12,5 @@ lottie.loadAnimation({
     animType: 'svg',
     loop: true,
     autoplay: true,
-    path: '../json/InicioAnim.json' // the path to the animation json
+    path: '../json/inicio.json' // the path to the animation json
 });
