@@ -4,7 +4,8 @@
 //     console.log("keydown event, keyValue: " + keyValue);    
    
 // }, false);
-   
+
+
 function shake(especial){
     document.getElementById(especial).className = "shake";
 }

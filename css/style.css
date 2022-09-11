@@ -121,6 +121,7 @@ nav{
     75% { transform: translateY(-9px) rotate(-17deg) }
     100% { transform: translateY(0) rotate(0) }
 }
+
 footer{
     background-color: #2C2627;
     color: #F8F3E6;    
@@ -135,6 +136,11 @@ color: #F8F3E6;
 }
 
 @media (max-width: 1000px) {
+    .characters{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
     .container-inicio{
         display: grid;
         grid-template-columns: repeat(1fr);
@@ -166,16 +172,3 @@ color: #F8F3E6;
         justify-content: center;
     }
 }
-/* @media(max-height:850px){
-    #animation > svg{
-        width: 375px;
-        height: 200px!important; 
-    }
-    .button{
-        width: 350px;
-        height: 65px;
-    }
-    .buttons{
-        margin-top: 1rem ;
-    }
-} */

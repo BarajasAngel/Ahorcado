@@ -53,12 +53,12 @@
         </div>
         <div class="modal-body">
           <div class="characters">
-            <img class="zoom" src="./img/man.png" alt="man" width="150" height="225">
-            <img class="zoom" src="./img/women.png" alt="women" width="150" height="225"> 
-            <img class="zoom" src="./img/boy.png" alt="boy" width="150" height="225">
-            <img id="cowgirl" onmouseleave="zoom('cowgirl')" onclick="shake('cowgirl')" class="zoom" src="./img/cowgirllock.png" alt="cowgirllock" width="150" height="225">
-            <img id="pinky" onmouseleave="zoom('pinky')" onclick="shake('pinky')" class="zoom" src="./img/pinkylock.png" alt="pinkylock" width="150" height="225">
-            <img id="mouse" onmouseleave="zoom('mouse')" onclick="shake('mouse')" class="zoom" src="./img/mouselock.png" alt="mouselock" width="150" height="225">
+            <a href="./game.html?id=0"><img class="zoom" src="./img/man.png" alt="man" width="150" height="225"></a>
+            <a href="./game.html?id=1"><img class="zoom" src="./img/women.png" alt="women" width="150" height="225"> </a>
+            <a href="./game.html?id=2"><img class="zoom" src="./img/boy.png" alt="boy" width="150" height="225"></a>
+            <a href="./game.html?id=3"><img id="cowgirl" onmouseleave="zoom('cowgirl')" onclick="shake('cowgirl')" class="zoom" src="./img/cowgirllock.png" alt="cowgirllock" width="150" height="225"></a>
+            <a href="./game.html?id=4"><img id="pinky" onmouseleave="zoom('pinky')" onclick="shake('pinky')" class="zoom" src="./img/pinkylock.png" alt="pinkylock" width="150" height="225"></a>
+            <a href="./game.html?id=5"><img id="mouse" onmouseleave="zoom('mouse')" onclick="shake('mouse')" class="zoom" src="./img/mouselock.png" alt="mouselock" width="150" height="225"></a>
           </div>
         </div>
         <div class="modal-footer">
@@ -73,13 +73,13 @@
     <div class="modal-dialog  modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="NewWordModalLabel">Nueva Palabra</h5>
+          <h5 class="modal-title" id="NewWordModalLabel">Nueva palabra</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="">          
             <form action="">
-              <input type="text" autofocus required>
+              <input type="text" class="form-control" autofocus required placeholder="Escribe aquí">
             </form>
           </div>
         </div>
