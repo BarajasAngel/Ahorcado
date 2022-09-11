@@ -9,7 +9,7 @@ main, header{
     
 }
 main{
-    height: calc(100% - 129.2px);
+    height: calc(100% - 123.2px);
 }
 body{    
    height:100vh;
@@ -29,16 +29,16 @@ nav{
     height: 72px;
 }
 
-#animation{
+#animation > svg{
     width: 375px;
-    height: 400px;
+    height: 400px!important; 
 }
 
 .container-inicio{
     display: flex;
     justify-content: center;    
     align-items: center;
-    gap: 9rem; 
+    gap: 10%; 
     height: 100%;
 }
 .buttons{
@@ -47,7 +47,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 4rem ;
+    margin-top: 3rem ;
 }
 .button{
     border-radius: 24px;
@@ -101,6 +101,7 @@ nav{
 }
 
 .zoom {        
+    
     transition: transform .2s; /* Animation */    
 }
   
@@ -108,11 +109,22 @@ nav{
    transform: scale(1.17);
    cursor: pointer;
 }
-
+.shake {    
+    animation: jump-shaking 0.83s;
+}
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-9px) }
+    35% { transform: translateY(-9px) rotate(17deg) }
+    55% { transform: translateY(-9px) rotate(-17deg) }
+    65% { transform: translateY(-9px) rotate(17deg) }
+    75% { transform: translateY(-9px) rotate(-17deg) }
+    100% { transform: translateY(0) rotate(0) }
+}
 footer{
     background-color: #2C2627;
     color: #F8F3E6;    
-    height: 74px;    
+    height: 68px;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +134,48 @@ text-decoration: none;
 color: #F8F3E6;    
 }
 
-
-
-
-
+@media (max-width: 1000px) {
+    .container-inicio{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        gap: 0%;
+    }
+    .item2{
+        grid-row-start: 0;
+        grid-row-end: 1;        
+    }
+    .item1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .item1 > img{
+        padding: 0px 25px 0px 25px;
+    }    
+    .button{
+        width: 350px;
+        height: 65px;
+    }
+    .buttons{
+        margin-top: 1rem ;
+    }
+    #animation > svg{
+        width: 375px;
+        height: 400px!important; 
+    }
+    nav{
+        justify-content: center;
+    }
+}
+/* @media(max-height:850px){
+    #animation > svg{
+        width: 375px;
+        height: 200px!important; 
+    }
+    .button{
+        width: 350px;
+        height: 65px;
+    }
+    .buttons{
+        margin-top: 1rem ;
+    }
+} */
